@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Shield, Accessibility, Globe, Sparkles, Check, ArrowRight } from 'lucide-react';
+import { Shield, Accessibility, Globe, Sparkles, Check, ArrowRight, Filter, FileText } from 'lucide-react';
 import Logo from '../components/Logo';
-
 
 function FeatureCard({ icon, title, description, image }: { 
   icon: React.ReactNode; 
@@ -61,8 +60,8 @@ function LandingPage() {
               for Everyone
             </h1>
             <p className="text-xl text-gray-600 mb-8">
-              Your all-in-one browser extension for ensuring web accessibility
-              and content safety. Perfect for developers, content creators, and parents.
+              Powered by Google's Gemini Nano, Gemini Aurora delivers real-time
+              AI-driven insights for web accessibility and content safety.
             </p>
             <div className="flex space-x-4">
               <button className="px-8 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 flex items-center">
@@ -124,9 +123,32 @@ function LandingPage() {
             description="Get instant feedback as you browse with our powerful scanning engine."
             image="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
           />
+          <FeatureCard
+            icon={<Filter className="w-6 h-6 text-purple-600" />}
+            title="Custom AI Filters"
+            description="Tailor accessibility and safety rules for specific use cases."
+            image="https://images.unsplash.com/photo-1521449256186-3ff8ef707006?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
+          />
+          <FeatureCard
+            icon={<FileText className="w-6 h-6 text-purple-600" />}
+            title="Detailed Reports"
+            description="Comprehensive reporting for organizations to meet compliance standards."
+            image="https://images.unsplash.com/photo-1581091012184-fd47c0318c8e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
+          />
         </div>
       </section>
-      
+
+      {/* Social Proof Section */}
+      <section className="container mx-auto px-6 py-16 bg-gradient-to-b from-white to-gray-50">
+        <h2 className="text-3xl font-bold text-center text-gray-900 mb-8">
+          Trusted by Developers Worldwide
+        </h2>
+        <p className="text-center text-gray-600 mb-12">
+          "Gemini Aurora has transformed how we ensure our web projects are both
+          accessible and safe for users."
+        </p>
+      </section>
+
       {/* Footer */}
       <footer className="bg-gray-50 py-12 mt-24">
         <div className="container mx-auto px-6">
@@ -174,5 +196,4 @@ function LandingPage() {
   );
 }
 
-// FeatureCard component remains the same
 export default LandingPage;

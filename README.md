@@ -1,5 +1,6 @@
 # Gemini Aurora
 
+
 **Gemini Aurora** is a cutting-edge web extension leveraging **Google Chrome's built-in AI APIs**, including **Gemini Nano**, to enhance web accessibility and ensure child-appropriate web experiences. This project is designed for the **Google Chrome Built-in AI Challenge**, showcasing the power of AI-driven interactions within a seamless browser extension.
 
 ---
@@ -71,3 +72,34 @@ Clone the repository:
 ```bash
 git clone https://github.com/MogammadShaqeelless16/Gemini-Aurora.git
 cd Gemini-Aurora
+
+
+
+# 📚 Documentation
+
+Comprehensive documentation is available in the [`docs/`](docs/) folder. Highlights include:
+
+- [AI Features Overview](docs/ai-features.md)
+- [Integration with Gemini Nano](docs/gemini-nano.md)
+- [API Reference](docs/api.md)
+
+---
+
+## 🎨 Design
+
+Gemini Aurora integrates a celestial and accessibility-focused design philosophy:
+
+- **Color Palette**: Gradients inspired by auroras, using purples, blues, and pinks.
+- **Logo**: A minimalist depiction of Gemini twins illuminated by aurora lights.
+- **Typography**: Friendly, clean fonts to reinforce inclusivity.
+
+---
+
+## 💡 Contribution
+
+Contributions are welcome! To contribute:
+
+1. **Fork the repository**.
+2. **Create a new branch**:
+   ```bash
+   git checkout -b feature-name
