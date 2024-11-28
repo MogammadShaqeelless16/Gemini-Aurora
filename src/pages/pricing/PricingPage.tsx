@@ -1,5 +1,6 @@
 import React from 'react';
-import { Check, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { FaCheck } from 'react-icons/fa'; // Import the FaCheck icon
 import Logo from '../../components/Logo';
 
 function PricingPage() {
@@ -79,15 +80,15 @@ function PricingPage() {
   );
 }
 
-function PricingCard({ 
-  title, 
-  price, 
-  period = '', 
-  description, 
-  features, 
-  buttonText, 
+function PricingCard({
+  title,
+  price,
+  period = '',
+  description,
+  features,
+  buttonText,
   buttonVariant = 'primary',
-  highlighted = false 
+  highlighted = false
 }: {
   title: string;
   price: string;
@@ -99,11 +100,13 @@ function PricingCard({
   highlighted?: boolean;
 }) {
   return (
-    <div className={`p-8 rounded-lg ${
-      highlighted 
-        ? 'bg-white shadow-xl border-2 border-purple-500 relative' 
-        : 'bg-white shadow-sm border border-gray-100'
-    }`}>
+    <div
+      className={`p-8 rounded-lg ${
+        highlighted
+          ? 'bg-white shadow-xl border-2 border-purple-500 relative'
+          : 'bg-white shadow-sm border border-gray-100'
+      }`}
+    >
       {highlighted && (
         <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <span className="bg-purple-500 text-white px-3 py-1 rounded-full text-sm">
@@ -120,7 +123,7 @@ function PricingCard({
       <ul className="space-y-3 mb-8">
         {features.map((feature, index) => (
           <li key={index} className="flex items-center text-gray-600">
-            <Check className="w-5 h-5 text-green-500 mr-2" />
+            <FaCheck className="w-5 h-5 text-green-500 mr-2" /> {/* Replacing Check with FaCheck */}
             {feature}
           </li>
         ))}
