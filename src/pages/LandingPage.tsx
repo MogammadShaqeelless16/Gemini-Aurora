@@ -4,7 +4,7 @@ import { Shield, Accessibility, Globe, Sparkles, Check, ArrowRight, Filter, File
 import Logo from '../components/Logo';
 import Features from '../components/landing/Features';
 import About from '../components/landing/About';
-
+import Hero from '../components/landing/Hero';
 
 function LandingPage() {
   return (
@@ -31,57 +31,11 @@ function LandingPage() {
         </nav>
       </header>
 
-      {/* Hero Section */}
-      <section className="container mx-auto px-6 py-16">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="text-left">
-            <h1 className="text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              Make the Web{' '}
-              <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-                Accessible
-              </span>{' '}
-              and{' '}
-              <span className="bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-                Safe
-              </span>{' '}
-              for Everyone
-            </h1>
-            <p className="text-xl text-gray-600 mb-8">
-              Powered by Google's Gemini Nano, Gemini Aurora delivers real-time
-              AI-driven insights for web accessibility and content safety.
-            </p>
-            <div className="flex space-x-4">
-              <button className="px-8 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 flex items-center">
-                Download Extension
-                <ArrowRight className="ml-2 w-4 h-4" />
-              </button>
-              <Link
-                to="/demo"
-                className="px-8 py-3 bg-white text-purple-600 rounded-lg border border-purple-200 hover:border-purple-300 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2"
-              >
-                View Demo
-              </Link>
-            </div>
-          </div>
-          <div className="relative">
-            <img
-              src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-              alt="Team working on accessibility"
-              className="rounded-lg shadow-2xl"
-            />
-            <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-lg">
-              <Logo size="small" />
-              <div className="mt-2 flex items-center space-x-1">
-                <Check className="w-4 h-4 text-green-500" />
-                <span className="text-sm text-gray-600">WCAG Compliant</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      {/* Main Content */}
+      <Hero />
       <Features />
       <About />
+
 
       {/* Social Proof Section */}
       <section className="container mx-auto px-6 py-16 bg-gradient-to-b from-white to-gray-50">
