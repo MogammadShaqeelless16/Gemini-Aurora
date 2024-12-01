@@ -2,26 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Shield, Accessibility, Globe, Sparkles, Check, ArrowRight, Filter, FileText } from 'lucide-react';
 import Logo from '../components/Logo';
+import Features from '../components/landing/Features';
+import About from '../components/landing/About';
 
-function FeatureCard({ icon, title, description, image }: { 
-  icon: React.ReactNode; 
-  title: string; 
-  description: string;
-  image: string;
-}) {
-  return (
-    <div className="bg-white rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow overflow-hidden">
-      <div className="h-48 overflow-hidden">
-        <img src={image} alt="" className="w-full h-full object-cover" />
-      </div>
-      <div className="p-6">
-        <div className="mb-4">{icon}</div>
-        <h3 className="text-xl font-semibold text-gray-900 mb-2">{title}</h3>
-        <p className="text-gray-600">{description}</p>
-      </div>
-    </div>
-  );
-}
 
 function LandingPage() {
   return (
@@ -93,50 +76,8 @@ function LandingPage() {
         </div>
       </section>
 
-      {/* Features Section */}
-      <section className="container mx-auto px-6 py-16">
-        <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">
-          Key Features
-        </h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <FeatureCard
-            icon={<Accessibility className="w-6 h-6 text-purple-600" />}
-            title="Accessibility Checker"
-            description="Automatically scan pages for WCAG compliance and get detailed reports."
-            image="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
-          />
-          <FeatureCard
-            icon={<Shield className="w-6 h-6 text-purple-600" />}
-            title="Content Safety"
-            description="Protect children with smart content filtering and inappropriate content detection."
-            image="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
-          />
-          <FeatureCard
-            icon={<Globe className="w-6 h-6 text-purple-600" />}
-            title="Multi-language Support"
-            description="Available in multiple languages to serve a global audience."
-            image="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
-          />
-          <FeatureCard
-            icon={<Sparkles className="w-6 h-6 text-purple-600" />}
-            title="Real-time Analysis"
-            description="Get instant feedback as you browse with our powerful scanning engine."
-            image="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
-          />
-          <FeatureCard
-            icon={<Filter className="w-6 h-6 text-purple-600" />}
-            title="Custom AI Filters"
-            description="Tailor accessibility and safety rules for specific use cases."
-            image="https://images.unsplash.com/photo-1521449256186-3ff8ef707006?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
-          />
-          <FeatureCard
-            icon={<FileText className="w-6 h-6 text-purple-600" />}
-            title="Detailed Reports"
-            description="Comprehensive reporting for organizations to meet compliance standards."
-            image="https://images.unsplash.com/photo-1581091012184-fd47c0318c8e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80"
-          />
-        </div>
-      </section>
+      <Features />
+      <About />
 
       {/* Social Proof Section */}
       <section className="container mx-auto px-6 py-16 bg-gradient-to-b from-white to-gray-50">
@@ -149,15 +90,18 @@ function LandingPage() {
         </p>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-gray-50 py-12 mt-24">
+ {/* Footer */}
+ <footer className="bg-gray-50 py-12 mt-24">
         <div className="container mx-auto px-6">
           <div className="grid md:grid-cols-4 gap-8">
             <div className="space-y-4">
               <div className="flex items-center space-x-2">
                 <Logo size="small" />
-                <span className="font-semibold text-gray-900">Gemini Aurora</span>
+                <span className="font-semibold text-gray-900">Gemini Leda</span>
               </div>
+              <p className="text-gray-600 text-sm">
+                A Soft Glitch Solutions Product
+              </p>
               <p className="text-gray-600 text-sm">
                 Making the web accessible and safe for everyone.
               </p>
@@ -188,7 +132,7 @@ function LandingPage() {
             </div>
           </div>
           <div className="border-t border-gray-200 mt-8 pt-8 text-center text-gray-600">
-            © 2024 Gemini Aurora. All rights reserved.
+            © 2024 Gemini Leda by Soft Glitch Solutions. All rights reserved.
           </div>
         </div>
       </footer>
