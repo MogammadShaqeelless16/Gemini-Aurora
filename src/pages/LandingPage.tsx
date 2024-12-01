@@ -15,15 +15,19 @@ function LandingPage() {
           <div className="flex items-center space-x-3">
             <Logo size="default" />
             <span className="text-xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
-              Gemini Aurora
+              Gemini Leda
             </span>
           </div>
-          <Link
-            to="/demo"
-            className="px-4 py-2 text-purple-600 hover:text-purple-700 font-medium"
-          >
-            Try Demo
-          </Link>
+          <div className="flex items-center space-x-6">
+            <a href="/features" className="text-gray-600 hover:text-gray-900">Features</a>
+            <a href="/about" className="text-gray-600 hover:text-gray-900">About</a>
+            <Link
+              to="/demo"
+              className="px-4 py-2 text-purple-600 hover:text-purple-700 font-medium"
+            >
+              Try Demo
+            </Link>
+          </div>
         </nav>
       </header>
 
