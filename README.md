@@ -1,105 +1,40 @@
-# Gemini Aurora
+# Gemini Leda: Protecting and Empowering All with Accessible, Child-Safe Web Experiences
 
+**Inspired by Leda, the legendary Spartan mother known for her strength and nurturing spirit, Gemini Leda is a cutting-edge web extension designed to empower users with disabilities and safeguard children in the online world.** Leveraging the power of Google Chrome's built-in AI tools, including Gemini Nano, Gemini Leda provides comprehensive accessibility scanning and child-appropriate content filtering.
 
-**Gemini Aurora** is a cutting-edge web extension leveraging **Google Chrome's built-in AI APIs**, including **Gemini Nano**, to enhance web accessibility and ensure child-appropriate web experiences. This project is designed for the **Google Chrome Built-in AI Challenge**, showcasing the power of AI-driven interactions within a seamless browser extension.
+## Key Features:
 
----
+* **AI-Powered Accessibility Guardian:** Gemini Leda utilizes Chrome's built-in AI capabilities to actively scan websites for accessibility issues. It detects areas requiring improvement, such as missing alt text or insufficient color contrast, and offers actionable solutions to make web experiences more inclusive for everyone.
 
-## 🚀 Features
+* **Content Safety Champion:** Powered by Gemini Nano's advanced AI language models, Gemini Leda analyzes content to identify potentially inappropriate material for children. It flags such content and assigns safety ratings to empower informed online exploration.
 
-### Key Capabilities:
-- **AI-Powered Accessibility Scanning**: 
-   - Uses Chrome's built-in AI APIs to identify and highlight accessibility issues in real-time.
-   - Provides actionable insights tailored to make websites more inclusive.
-- **Content Safety Checks**: 
-   - Leverages Gemini Nano to detect and analyze child-appropriate content using advanced AI language models.
-   - Flags potentially inappropriate material and provides safety ratings.
-- **Interactive Sidebar**: 
-   - A sleek, user-friendly sidebar for instant feedback, settings adjustments, and detailed AI-driven recommendations.
-- **Customizable Filters**: 
-   - Adjust content filters and scanning parameters to suit user needs.
-- **Reporting & Insights**: 
-   - Generate detailed reports on accessibility compliance and content safety, ready to share with stakeholders.
+* **User-Friendly Sidebar:** An intuitive sidebar provides immediate access to scanning results, settings adjustments, and detailed AI-driven recommendations. This ensures a seamless and efficient user experience.
 
----
+* **Customizable Filters:** Tailor content filters and scanning parameters to perfectly match your needs. Gemini Leda gives you granular control over how you navigate the web.
 
-## 🌈 Installation
+* **Reporting & Insights:** Generate insightful reports detailing your browsing history's accessibility compliance and content safety assessments. These reports are invaluable for advocating for web accessibility and sharing with developers or relevant authorities.
 
-1. **Download the Extension**:
-   Visit the [Gemini Aurora Release Page](#) to download the latest version.
+## Installation:
 
-2. **Add to Browser**:
-   - For Chrome:
-     - Navigate to `chrome://extensions/`.
-     - Enable **Developer Mode** (top-right corner).
-     - Click **Load Unpacked** and select the folder containing the built extension.
-   - For other Chromium-based browsers, follow similar steps in the extensions settings.
+1. **Download the Extension:** Visit the official Gemini Leda Release Page (link to be provided) to obtain the latest version.
+2. **Add to Browser:**
+   - **Chrome:** Open `chrome://extensions/` in your browser.
+     - Toggle on "Developer mode" in the top-right corner.
+     - Click "Load unpacked" and select the directory containing the extracted extension files.
+   - **Other Chromium-Based Browsers:** Follow similar steps within your browser's extension management settings.
+3. **Start Exploring:** Click on the Gemini Leda icon in your browser toolbar to activate the extension and explore its features through the user-friendly sidebar.
 
-3. **Start Exploring Gemini Aurora**:
-   - Click on the Gemini Aurora icon in your browser toolbar.
-   - Explore the sidebar to use AI-powered features.
+## Usage:
 
----
+1. **Open a Web Page:** Navigate to any website you wish to evaluate.
+2. **Launch Gemini Leda:** Click the extension icon to open its sidebar.
+3. **Run AI-Powered Scans:** Utilize the "Accessibility Checker" to identify and address accessibility concerns, and utilize the "Content Filter" to assess child-appropriateness.
+4. **Receive AI Recommendations:** View real-time suggestions and actionable insights provided by AI to enhance your web experience.
 
-## 🛠️ Usage
+## Development:
 
-1. **Open a Web Page**:
-   - Navigate to any website to evaluate its accessibility and content safety.
+### Prerequisites:
 
-2. **Launch Gemini Aurora**:
-   - Click on the extension icon to open the sidebar.
-
-3. **Run AI-Powered Scans**:
-   - Use the **Accessibility Checker** to find issues such as missing alt text or poor contrast.
-   - Run the **Content Filter** to assess whether the site is child-appropriate.
-
-4. **Receive AI Recommendations**:
-   - AI-driven insights are displayed in real-time.
-   - Follow actionable tips for improving web experiences.
-
----
-
-## 🧑‍💻 Development
-
-### Prerequisites
-Ensure you have the following installed:
-- **Node.js** (v16 or higher)
-- **npm** or **yarn**
+- Node.js (version 16 or later)
+- npm or yarn
 - A modern browser (Google Chrome recommended)
-
-### Setup
-Clone the repository:
-```bash
-git clone https://github.com/MogammadShaqeelless16/Gemini-Aurora.git
-cd Gemini-Aurora
-
-
-
-# 📚 Documentation
-
-Comprehensive documentation is available in the [`docs/`](docs/) folder. Highlights include:
-
-- [AI Features Overview](docs/ai-features.md)
-- [Integration with Gemini Nano](docs/gemini-nano.md)
-- [API Reference](docs/api.md)
-
----
-
-## 🎨 Design
-
-Gemini Aurora integrates a celestial and accessibility-focused design philosophy:
-
-- **Color Palette**: Gradients inspired by auroras, using purples, blues, and pinks.
-- **Logo**: A minimalist depiction of Gemini twins illuminated by aurora lights.
-- **Typography**: Friendly, clean fonts to reinforce inclusivity.
-
----
-
-## 💡 Contribution
-
-Contributions are welcome! To contribute:
-
-1. **Fork the repository**.
-2. **Create a new branch**:
-   ```bash
-   git checkout -b feature-name
